@@ -39,7 +39,7 @@ int main()
 }
 
 void max_priority_q(int heap[], int heap_size){
-    int pressedNumber,topValue,popedValue,valueToPuhs;
+    int pressedNumber,topValue,popedValue,valueToPush;
     while(1){
         cout<<"Press 1, 2, & 3 inorder to perform top, push & pop respectively: ";
         cin>>pressedNumber;
@@ -50,8 +50,8 @@ void max_priority_q(int heap[], int heap_size){
         }
         else if(pressedNumber == 2){
             cout<<"Enter value to push: ";
-            cin>>valueToPuhs;
-            push(heap,heap_size,valueToPuhs);
+            cin>>valueToPush;
+            push(heap,heap_size,valueToPush);
             heap_size += 1;
             print_heap(heap,heap_size);
             

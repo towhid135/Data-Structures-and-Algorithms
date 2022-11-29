@@ -1,8 +1,5 @@
 #include "build_min_heap.h"
 
-
-
-
 int main(){
     int heap[] = {0,3, 8, 15, 25, 10, 18, 6, 20, 2};
     int heap_size = 9;
