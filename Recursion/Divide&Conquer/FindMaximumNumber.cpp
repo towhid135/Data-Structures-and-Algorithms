@@ -31,10 +31,10 @@ int divide_array(int array_size){
 
 int find_maximum(int array[], int array_size){
     int maximum;
-    if(array_size <= 0) return array[array_size];
+    if(array_size <= 1) return array[array_size - 1];
     array_size = divide_array(array_size);
     
     maximum = find_maximum(array,array_size);
 
-    return check_maximum(array[array_size], maximum);
+    return check_maximum(array[array_size - 1], maximum);
 }
