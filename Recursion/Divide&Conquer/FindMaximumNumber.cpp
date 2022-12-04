@@ -14,7 +14,7 @@ int divide_array(int array_size);
 int find_maximum(int array[], int array_size);
 int main(){
     int res;
-    int array[] = {102,100,-1,101,1000,-10,0}, array_size = 7;
+    int array[] = {102,100,-1,101,1000,-10,2000}, array_size = 7;
     res = find_maximum(array,array_size);
     cout<<res;
     return 0;
@@ -36,5 +36,5 @@ int find_maximum(int array[], int array_size){
     
     maximum = find_maximum(array,array_size);
 
-    return check_maximum(array[array_size - 1], maximum);
+    return check_maximum(array[array_size], maximum);
 }
