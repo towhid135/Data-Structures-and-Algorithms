@@ -1,4 +1,4 @@
-cout<<"pivot_index: "<<pivot_index<<endl;
-    // //for left array
-    // quick_sort(ara,low,pivot_index - 1);
-    // quick_sort(ara,pivot_index+1,high);
+ // cout<<"left ara: ";
+    // print_ara(left_ara,left,mid);
+    // cout<<"right ara: ";
+    // print_ara(right_ara,mid+1,right);
