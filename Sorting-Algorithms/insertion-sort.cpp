@@ -42,7 +42,7 @@ int main(){
 
         //another approach
         for(unSortIndx = 1; unSortIndx < n; unSortIndx++){
-            key = ara[unSortIndx];
+            int key = ara[unSortIndx];
             lastSortIndx = unSortIndx - 1;
 
             while(lastSortIndx >= 0 && ara[lastSortIndx] > key){
