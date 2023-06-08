@@ -9,7 +9,7 @@ class space {
     space(){};
     space(int x,int y, int z);
     void display(void);
-    space operator-();
+    friend space operator-(space &);
 };
 space::space(int x,int y,int z){
     this->x = x;
@@ -22,21 +22,17 @@ void space::display(void){
 }
 
 /*
-If the operator function is a member function then it takes no arguments
-in unary operation
+If the operator function is a friend function then it takes one arguments
+in unary operation.
 */
-space space::operator-(){
-    space temp(-x,-y,-z);
+space operator-(space &s){
+    space temp(-s.x,-s.y,-s.z);
     return temp;
 }
 
 int main(){
     space S(1,2,3),Res;
-    /*
-    this line will be executed like this
     Res = operator-(S);
-    */
-    Res = -S;
     Res.display();
     return 0;
 }
